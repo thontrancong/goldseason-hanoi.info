@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Site test zoom image when hover it</title>
+    <script type="text/javascript" src="elevatezoom-master/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="elevatezoom-master/jquery.elevatezoom.js"></script>
+    <style>
+        body{
+            text-align: center;
+            margin:0;
+        }
+        .zoomContainer{
+            margin: 0 auto;
+            float: none;
+        }
+        #zoom_image{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+        }
+    </style>
+    <script type="text/javascript">
+		var w = window.parent==undefined ? (window.innerHeight-5) : window.parent.innerHeight-95;
+        $(document).ready(function(){
+            $('#zoom_image').css({'height': w + 'px', 'max-height': w + 'px'});
+            $("#zoom_image").elevateZoom({ zoomType	: "inner"});
+        });
+        $(window).resize(function(){
+            $('#zoom_image').css({'height': w + 'px'});
+        });
+    </script>
+</head>
+
+<body>
+    <img id="zoom_image" src="images/mbtt_02.jpg" data-zoom-image="images/mbtt_02.jpg"/>
+</body>
+
+</html>

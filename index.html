@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gold season</title>
+		
+	<meta name="description" content="Gold season">
+	<meta name="keywords" content="Gold season">
+	<meta property="og:title" content="Gold season">
+	<meta property="og:description" content="Gold season">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image" content="http://goldseason-hanoi.info/images/banner.png">
+	<link href="images/favicon.png" type="image/x-ico" rel="shorcut icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+		<link rel="stylesheet" href="ionicons/css/ionicons.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" />
+
+	    <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+		<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.6"></script>
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+		<script type="text/javascript" src="js/check.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox(
+					{
+									
+						maxWidth	: '100%',
+						maxHeight	: '100%',
+						width		: '100%',
+						height		: '100%',
+						margin		: 0,
+						autoSize	: true,
+						closeClick	: true,
+						type		: 'image',
+
+						openEffect  : 'none',
+						closeEffect : 'none',
+
+						prevEffect : 'none',
+						nextEffect : 'none',
+
+						closeBtn  : true,
+
+						helpers : {
+							title : {
+								type : 'inside'
+							},
+							buttons	: {}
+						},
+						beforeLoad: function(){
+							//check type
+							if(this.href=="detail-light-box.html"){
+								this.type = 'iframe';
+							}else{
+								this.type = 'image';
+							}
+						},
+						afterLoad : function() {
+							this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+						}
+					}
+				);
+			});
+		</script>
+
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1376932315938257";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+	<header class="header">
+		<div class="head-info-1">
+        <div class="container">
+            <p>Hotline:<b>0963 90 41 00</b></p>
+            <p><span class="ion-email"></span>cskhgoldseasonhn@gmail.com</p>
+        </div>
+    	</div>
+	<div>
+		<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="logo">
+				<a href="index.html" title="Gold Season"><img src="images/logo.png" alt="logo GoldSeason" /></a>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<div class="navbar-header"></div>
+				<ul class="nav navbar-nav">
+					<li class="is-active"><a href="http://goldseason-hanoi.info/" title="Gold Season"><span class="ion-ios-home"></span></a></li>
+					<li><a href="#tong-quan" title="Tổng quan">Tổng quan</a></li>
+					<li><a href="#vi-tri" title="Vị trí">Vị trí</a></li>
+					<li><a href="#tien-ich" title="Tiện ích">Tiện ích</a></li>
+					<li><a href="#mat-bang" title="Mặt bằng">Mặt bằng</a></li>
+					<li><a href="#bang-gia" title="Bảng giá">Bảng giá</a></li>
+					<li><a href="#dang-ky" title="Liên hệ">Liên hệ</a></li>
+					<li class="item-right">
+						<form action="javascript:void(0)" class="form-mini-search" method="get">
+							<input type="text" name="s" value="" placeholder="Tìm kiếm">
+							<button type="submit"><span class="ion-search"></span></button>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</nav>
+	</div>
+	<div class="container-fluid banner">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="active item">
+					<img src="images/slide_05.jpg" alt="Tiếp tục mở bán tổ hợp VIP - GoldSeason">
+				</div>
+			</div>
+
+		</div>
+		<!-- end carousel-example-generic -->
+	
+	</header>
+	<div class="home">
+		<div class="block-ly-do">
+			<div class="container">
+				<h2 class="block-title">8 Lý do khách hàng nên chọn GoldSeason</h2>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 block-item">
+						<p>1. Vị trí đắc địa</p>
+						<p>2. HẠ TẦNG GIAO THÔNG HIỆN ĐẠI</p>
+						<p>3. HẠ TẦNG GIÁO DỤC TỐT NHẤT</p>
+						<p>4. 99 TIỆN ÍCH VƯỢT TRỘI</p>
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 block-item">
+						<p>5. MÔ HÌNH SẢN PHẨM KHÁC BIỆT VÀ TIÊN TIẾN
+							<span class="ion-plus btn-expand"></span>
+							<span class="sub-content">TNR Holding Việt Nam hiện đang là đơn vị phát triển Bất Động Sản hàng đầu tại Hà Nội</span>
+						</p>
+						<p>6. THIẾT KẾ ĐỘT PHÁ, TINH TẾ
+							<span class="ion-plus btn-expand"></span>
+							<span class="sub-content">TNR Holding Việt Nam hiện đang là đơn vị phát triển Bất Động Sản hàng đầu tại Hà Nội</span>
+						</p>
+						<p>7. SỞ HỮU CĂN HỘ CAO CẤP DỄ DÀNG
+							<span class="ion-plus btn-expand"></span>
+							<span class="sub-content">TNR Holding Việt Nam hiện đang là đơn vị phát triển Bất Động Sản hàng đầu tại Hà Nội</span>
+						</p>
+						<p>8. THƯƠNG HIỆU VÀ UY TÍN CỦA CHỦ ĐẦU TƯ
+							<span class="ion-plus btn-expand"></span>
+							<span class="sub-content">TNR Holding Việt Nam hiện đang là đơn vị phát triển Bất Động Sản hàng đầu tại Hà Nội</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- blog tong quan -->
+		<div id="tong-quan"class="block-tong-quan">
+
+			<div class="container">
+				<h2 class="block-title-gold">Tổng quan dự án Gold Season</h2>
+				<p class="block-description">Với thiết kế lấy cảm hứng từ Mahattan - trái tim của thành phố NewYork, Goldseasion là kết tinh giữa nét phóng khoáng tiện nghi của văn hóa Mỹ</p>
+
+
+				<div class="block-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+							<ul>
+								<li><b>TỔNG QUAN DỰ ÁN GOLD SEASON NGUYỄN TUÂN</b></li>
+								<li><p>+ Tên dự án:  <strong>Chung cư GoldSeason</strong></p></li>
+								<li><p>+ Vị trí : <strong>47 Nguyễn Tuân, Thanh Xuân, Hà Nội</strong></p></li>
+								<li><p>+ Diện tích khu đất: <strong>22.371 m2</strong></p></li>
+								<li><p>+ Đất xây dựng: <strong>8.131 m2</strong></p></li>
+								<li><p>+ Mật độ xây dựng: <strong>36.4%</strong></p></li>
+								<li><p>+ Diện tích căn hộ: <strong>64 - 108 m2</strong></p></li>
+								<li><p>+ Hình thức sở hữu: <strong>Vĩnh viễn</strong></p></li>
+								<li><p>+ Quy mô : <strong>2 tầng hầm liên thông, 4 tòa tháp cao từ 27 - 35 tầng được đặt tên Xuân, Hạ, Thu, Đông.</strong></li>
+								<li><p>+ Loại hình phát triển: <strong>Tổ hợp căn hộ cao cấp và khu phức hợp tiện ích khép kín.</strong></p></li>
+								<li><p>+ Phân phối chính thức: <strong>Hệ thống Siêu thị Dự án Bất Động Sản STDA</strong></p></li>
+							</ul>
+						</div>
+
+						<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+							<div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
+								<ol class="carousel-indicators">
+									<li data-target="#carousel-example-generic-2" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example-generic-2" data-slide-to="1"></li>
+									<li data-target="#carousel-example-generic-2" data-slide-to="2"></li>
+								</ol>
+
+								<div class="carousel-inner">
+									<div class="active item">
+										<img src="images/slide-tong-quan-01.png">
+										<!--<div class="carousel-caption">
+                                          <h3>What we do</h3>
+                                        </div> -->
+									</div>
+
+									<div class="item">
+										<img src="images/slide-tong-quan-01.png">
+
+										<!--<div class="carousel-caption">
+                                          <h3>What we do</h3>
+                                        </div> -->
+									</div>
+									<div class="item">
+										<img src="images/slide-tong-quan-01.png">
+										<!--<div class="carousel-caption">
+                                          <h3>What we do</h3>
+                                        </div> -->
+									</div>
+									<a class="carousel-control left" href="#carousel-example-generic-2" data-slide="prev"></a>
+									<a class="carousel-control right" href="#carousel-example-generic-2" data-slide="next"></a>
+								</div>
+
+							</div><!-- end carousel-example-generic -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- block vi tri gold season-->
+		<div id="vi-tri" class="block-vi-tri">
+			<div class="container">
+				<h2 class="block-title-gold">VỊ TRÍ VÀNG - ĐẲNG CẤP SANG</h2>
+				<p class="block-description">Tọa lạc tại 47 Nguyễn Tuân, Thanh Xuân, Hà Nội – GoldSeason được xem là điểm nối giữa 2 trục đường huyết mạch Lê Văn Lương và Nguyễn Trãi – Nơi giao thoa của trung tâm thành phố mới và cũ. Goldseason được thừa hưởng toàn bộ những giá trị lâu đời của thành phố kết hợp
+					cùng sự hiện đại và năng động của khu trung tâm mới.Từ đây, cư dân có thể dễ dàng kết nối với khu vực xung quanh nhờ hệ thống giao thông đồng bộ đồng thời thừa hưởng toàn bộ những tiện ích vượt trội: trường học, bệnh viện, siêu thị, khu vui chơi, công viên giải trí…</p>
+				<div class="row block-content custom-vi-tri">
+					<div class="col-xs-12 col-sm-9 col-md-9 col-lg-12 v1-9">
+						<img src="images/block-03-big.png" alt="GoldSeason">
+					
+					</div>
+					<!-- 					<ul class="col-xs-12 col-sm-3 col-md-3 col-lg-3 v1-3">
+						<li><img src="images/block-03-small-1.png"></li>
+						<li><img src="images/block-03-small-2.png"></li>
+    					</ul> -->
+				</div>
+			</div>
+		</div>
+
+
+		<!-- tien ich gold season-->
+		<div id="tien-ich" class="block-tien-ich">
+			<div class="container">
+				<h2 class="block-title-gold">99 tiện ích khép kín đồng bộ - đẳng cấp 5 sao</h2>
+				<p class="block-description" style="color: #fff">GSS hội tụ 99 tiện ích cao cấp khép kín và đồng bộ đáp ứng tối đa nhu cầu của mọi cư dân nơi đây từ người già đến trẻ nhỏ. Tất cả các tiện ích đều mang đến cho cư dân một cuộc sống thoải mái, tiện nghi với phong cách hoàn toàn khác biệt</p>
+				<div id="carousel-example-generic-3" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic-3" data-slide-to="0" class="active"></li>
+						<li data-target="#carousel-example-generic-3" data-slide-to="1"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="active item">
+							<ul class="block-content">
+								<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 v1-4"><a class="fancybox" rel="group" href="images/a_CongMatTroi.jpg"> <img src="images/CongMatTroi.jpg" alt="QUẢNG TRƯỜNG TRUNG TÂM" />
+								</a>
+									<p>QUẢNG TRƯỜNG TRUNG TÂM</p></li>
+								<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 v1-4"><a class="fancybox" rel="group" href="images/a_road love.jpg"> <img src="images/road-love.jpg" alt="CON ĐƯỜNG TÌNH YÊU" />
+								</a>
+									<p>CON ĐƯỜNG TÌNH YÊU</p></li>
+								<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 v1-4"><a class="fancybox" rel="group" href="images/a_san choi tre em.jpg"> <img src="images/san-tre-em.jpg" alt="KHU VUI CHƠI TRẺ EM" />
+								</a>
+									<p>KHU VUI CHƠI TRẺ EM</p></li>
+							</ul>
+						</div>
+
+						<div class="item">
+							<ul class="block-content">
+								<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 v1-4"><a class="fancybox" rel="group" href="images/a_gym1.jpg"> <img src="images/gym1-1.jpg" alt="KHU THỂ THAO" />
+								</a>
+									<p>KHU THỂ THAO</p></li>
+								<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 v1-4"><a class="fancybox" rel="group" href="images/a_pavillion.jpg"> <img src="images/pavillion.jpg" alt="KIẾN TRÚC PAVILLION" />
+								</a>
+									<p>KIẾN TRÚC PAVILLION</p></li>
+								<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 v1-4"><a class="fancybox" rel="group" href="images/a_skybar-v2.jpg"> <img src="images/skybar-v2.jpg" alt="SKY BAR " />
+								</a>
+									<p>SKY BAR</p></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- end carousel-example-generic -->
+			</div>
+		</div>
+
+		<!-- tien ich gold season-->
+		<div id="mat-bang" class="block-gallery">
+			<div class="container">
+				<h2 class="block-title-gold">THÔNG TIN CĂN HỘ</h2>
+				<ul class="nav nav-tabs block-control">
+					<li class="active col-xs-12 col-sm-4 col-md-4 col-lg-4"><a class="btn is-active" data-toggle="tab" href="#home">Hình ảnh phối cảnh</a></li>
+					<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a class="btn" data-toggle="tab" href="#menu1">mặt bằng tổng thể</a></li>
+					<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4"><a class="btn" data-toggle="tab" href="#menu2">Hình ảnh mặt bằng căn hộ</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div id="home" class="tab-pane fade in active">
+						<ul class="row block-content">
+							<a class="fancybox" rel="group" href="images/Facade okay.jpg">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/phoi_canh_1.jpg" alt="Gold Season - Hình ảnh phối cảnh"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/Tong the dem 11-1.jpg">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/phoi_canh_2.jpg" alt="Gold Season - Hình ảnh phối cảnh"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/TT chieu ta.jpg">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/phoi_canh_3.jpg" alt="Gold Season - Hình ảnh phối cảnh"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/TT dem 12-1-sua mai.jpg">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/phoi_canh_4.jpg" alt="Gold Season - Hình ảnh phối cảnh"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/TT dem cong vien.jpg">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/phoi_canh_5.jpg" alt="Gold Season - Hình ảnh phối cảnh"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/phoi_canh_6.jpg">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/phoi_canh_6.jpg" alt="Gold Season - Hình ảnh phối cảnh"></li>
+							</a>
+						</ul>
+					</div>
+					<div id="menu1" class="tab-pane fade">
+						<ul class="row block-content">
+							<a class="fancybox" rel="group" href="detail-light-box.html">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/mat_bang_1.jpg" alt="Gold Season - Mặt bằng tổng thể"></li>
+							</a>
+							<a class="fancybox" rel="group" href="detail-light-box.html">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/mat_bang_2.jpg" alt="Gold Season - Mặt bằng tổng thể"></li>
+							</a>
+							<a class="fancybox" rel="group" href="detail-light-box.html">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/mat_bang_3.jpg" alt="Gold Season - Mặt bằng tổng thể"></li>
+							</a>
+							<a class="fancybox" rel="group" href="detail-light-box.html">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/mat_bang_4.jpg" alt="Gold Season - Mặt bằng tổng thể"></li>
+							</a>
+							<a class="fancybox" rel="group" href="detail-light-box.html">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/mat_bang_5.jpg" alt="Gold Season - Mặt bằng tổng thể"></li>
+							</a>
+							<a class="fancybox" rel="group" href="detail-light-box.html">
+
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/mat_bang_6.jpg" alt="Gold Season - Mặt bằng tổng thể"></li>
+							</a>
+						</ul>
+					</div>
+					<div id="menu2" class="tab-pane fade">
+						<ul class="row block-content">
+							<a class="fancybox" rel="group" href="images/gold_sales kit-02.jpg">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/gold_ss_sales_kit_02.jpg" alt="Gold Season - Hình ảnh mặt bằng căn hộ"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/gold_sales kit-03.jpg">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/can_ho_2.jpg" alt="Gold Season - Hình ảnh mặt bằng căn hộ"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/gold_sales kit-05.jpg">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/gold_ss_sales kit-05.jpg" alt="Gold Season - Hình ảnh mặt bằng căn hộ"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/gold_sales kit-07.jpg">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/can_ho_4.jpg" alt="Gold Season - Hình ảnh mặt bằng căn hộ"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/gold_sales kit-06.jpg">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/can_ho_5.jpg" alt="Gold Season - Hình ảnh mặt bằng căn hộ"></li>
+							</a>
+							<a class="fancybox" rel="group" href="images/gold_sales kit-04.jpg">
+								<li class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><img src="images/can_ho_6.jpg" alt="Gold Season - Hình ảnh mặt bằng căn hộ"></li>
+							</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 		<div id="tien-do" class="block-tien-do"> -->
+		<!-- 			<div class="container"> -->
+		<!-- 				<h2 class="block-title-gold">Tiến độ Gold Season</h2> -->
+		<!-- 				<div class="block-content"></div> -->
+		<!-- 			</div> -->
+		<!-- 		</div> -->
+
+		<div class="block-loi-ich">
+			<div class="container">
+				<h2 class="block-title">LỢI ÍCH CỦA KHÁCH HÀNG VÀ CAM KẾT CỦA CHỦ ĐẦU TƯ</h2>
+				<div class="row">
+					<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 block-item">
+						<p>LỢI ÍCH CỦA KHÁCH HÀNG</p>
+						<span>Sở hữu căn hộ cao cấp với ``GIÁ GỐC`` ký trực tiếp với Chủ Đầu Tư</span>
+						<span>Ưu đãi lớn: ``Tặng 2 cây vàng 9999 khi mua căn hộ 3 phòng ngủ``</span>
+						<span>Triết khấu lên tới 2% cho khách hàng nào mua 3 căn hộ trở lên</span>
+						<span>Mọi thủ tục quý khách hàng được chúng tôi hỗ trợ
+							hoàn tất A - Z</span>
+						<span>Tiến độ thanh toán chia nhỏ, hợp lý - Quý khách hàng đóng tiền theo tiến độ đã xây dựng</span>
+						<span>Nhiều chính sách ưu đãi hấp dẫn khi đặt chỗ mua căn hộ sớm</span>
+
+					</div>
+					<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 block-item">
+						<p>CAM KẾT CỦA CHỦ ĐẦU TƯ</p>
+						<span>- Cam kết đúng tiến độ xây dưng đặt ra</span> <span>- Chất lượng đảm bảo hàng đầu</span> <span>- Chỉ thanh toán khi đúng tiến độ thi công</span> <span>- Hợp đồng mua bán ký trực tiếp với Chủ Đầu Tư</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="bang-gia" class="block-tu-van">
+			<div class="container">
+				<h2 class="block-title-gold">Đăng ký tư vấn</h2>
+				<div class="row block-content">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 block-left">
+						<form class="form-inline" action="javascript:void(0)" method="post">
+							<div class="form-group">
+								<input type="text" name="full_name" placeholder="Họ và tên">
+							
+							</div>
+							<div class="form-group ">
+								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-half">
+									<input type="text" name="phone" placeholder="Số điện thoại">
+								
+								</div>
+								<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 input-half">
+									<input type="text" name="email" placeholder="Email">
+								
+								</div>
+							</div>
+							<div class="form-group form-last-child">
+								<textarea placeholder="Nội dung" name="content"></textarea>
+							</div>
+							<button type="button" class="btn btn-red-1" onclick="return checkInfoCustomer()">Đăng ký</button>
+						</form>
+
+
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 block-right">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<img src="images/tu-van-01.png">
+								<p>Thu An</p> <span>Tư vấn viên:</span><span class="custom-span"> 0983 323 880</span>
+						
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<img src="images/tu-van-02.png">
+								<p>Nguyễn Lương</p> <span>Tư vấn viên:</span><span class="custom-span"> 094 228 3536 </span>
+						
+						</div>
+						<a taget="_blank" href="tel:0942283536" class="btn btn-red">Tư vấn</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="block-bank">
+			<div class="container">
+				<div id="carousel-example-generic-4" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<div class="active item">
+							<ul>
+								<li><img src="images/hoa_binh.jpg"></li>
+								<li><img src="images/lq_stda.jpg"></li>
+								<li><img src="images/lq_tnr.jpg"></li>
+								<li><img src="images/maritime_bank.jpg"></li>
+								<li><img src="images/mua_dong.jpg"></li>
+							</ul>
+
+							<!--<div class="carousel-caption">
+                           <h3>What we do</h3>
+                         </div> -->
+						</div>
+					</div>
+
+				</div>
+				<!-- end carousel-example-generic -->
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h4 class="footer-title">Thông tin liên hệ</h4>
+				<div class="footer-description">
+					<p class="big">Dự án gold season</p>
+					<p>
+						<span class="ion-location"></span>Địa chỉ: 47 Nguyễn Tuân - Thanh Xuân - Hà Nội
+					</p>
+					<p>
+						<span class="ion-ios-telephone"></span>Tel: <a taget="_blank" href="tel:0942283536">094 228 3536</a>
+					</p>
+					<p>
+						<span class="ion-ios-clock-outline"></span>Giờ làm việc:
+					</p>
+					<p>
+						<span class="ion-ios-email"></span>Email: goldseasonhanoi.info@gmail.com
+					</p>
+				</div>
+				<div class="footer-map">
+					<div class="content-gmap">
+						<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+						<div style='overflow: hidden; height: 200px; width: 360px;'>
+							<div id='gmap_canvas' style='height: 200px; width: 360px;'></div>
+							<style>
+#gmap_canvas img {
+	max-width: none !important;
+	background: none !important
+}
+</style>
+						</div>
+						<a href='http://stempel-dienst.de/'>stempel shop</a>
+						<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=d7967528d8424a4963c74815053f28292900b26a'></script>
+						<script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(20.997974271938347,105.80629066137692),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(20.997974271938347,105.80629066137692)});infowindow = new google.maps.InfoWindow({content:'<strong>Dự án Gold Season</strong><br>47 Nguyễn Tuân - Thanh Xuân - Hà Nội<br> Hanoi<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h4 class="footer-title">Đăng ký nhận tin</h4>
+				<div class="footer-description">
+					<p>Nhập email để đăng ký nhận khuyến mại từ Gold Season.</p>
+					<input type="text" name="dk_email" id="register-email">
+						<button type="button" class="btn btn-register" onclick="return checkDangKy()">Đăng ký ngay</button>
+				
+				</div>
+				<div class="footer-social">
+					<a href="javascript:void(0)"><img src="images/icon-facebook.png"></a> <a href="javascript:void(0)"><img src="images/icon-google-plus.png"></a> <a href="javascript:void(0)"><img
+						src="images/icon-twiter.png"
+					></a> <a href="javascript:void(0)"><img src="images/icon-youtube.png"></a>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<h4 class="footer-title">Kết nối xã hội</h4>
+				<div class="content-social">
+					<div class="fb-page" data-href="https://www.facebook.com/Gold-Season-47-Nguy%E1%BB%85n-Tu%C3%A2n-1108872632458883" data-tabs="timeline" data-width="350" data-height="267" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+	<div class="border-footer"></div>
+	<div id="popup-register" class="popup-register">
+		<form action="javascript:void(0)" method="post">
+			<button class="popup-btn-close" type="button"><span class="ion-android-close"></span></button>
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 field-left">
+					<img src="images/logo.png"/>
+					<p class="phone-number">094 228 35 36</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 field-right">
+					<h3>Đừng bỏ lỡ cơ hội những tin tức mới nhất về dự án bạn quan tâm</h3>
+					<div class="field-set">
+						<input name="phone" placeholder="Điện Thoại">
+						<input name="email" placeholder="E-Mail">
+						<button class="btn-register" type="button">Đăng ký</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="popup-contact" id="popup-contact">
+		<button class="popup-btn-close" type="button"><span class="ion-android-close"></span></button>
+		<div class="contact-phone">
+			<p class="contact-title"><img src="images/icon-phone.png"> Liên hệ</p>
+			<a title="Ấn vào để gọi" href="tel:0942283536">094 228 3536</a>
+		</div>
+	</div>
+</body>
+</html>
